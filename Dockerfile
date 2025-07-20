@@ -1,4 +1,4 @@
-FROM devlikeapro/waha:latest
+FROM devlikeapro/waha-plus:latest
 # Optional: expose port if your app listens on one
 EXPOSE 80
 # Only include CMD if the base image doesn't already run the app
