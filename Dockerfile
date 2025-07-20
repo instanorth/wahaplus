@@ -1,3 +1,6 @@
-docker login -u devlikeapro -p dckr_pat__Iok5NKePjYc_f-tM-S7RK6VDMw
-docker pull devlikeapro/waha-plus:latest
-docker logout
+FROM devlikeapro/waha-plus:latest
+# Optional: expose port if your app listens on one
+EXPOSE 8080
+# Only include CMD if the base image doesn't already run the app
+# Remove this if the image handles it internally
+CMD ["npm", "start"]
